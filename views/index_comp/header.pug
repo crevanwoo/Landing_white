@@ -1,0 +1,16 @@
+// header begins
+header
+	div.wrapper.clear
+		div.logo
+			div.letters Layout
+				span.number 2
+		nav.header_nav
+			div.menu_shim
+			span.header_menu_trigger.fa.fa-bars
+			ul.clear
+				-for (var i=0; i< 4; i++)
+					li
+						a(href= header_a[i])= header_nav[i]
+		a(href="#top").back_to_top
+			span.fa.fa-chevron-up
+// header ends

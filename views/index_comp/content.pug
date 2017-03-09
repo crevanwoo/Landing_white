@@ -1,0 +1,129 @@
+// top slider begins
+
+div.top_wrapper#top
+	section.top_slider
+		-for (var i =0; i < 5; i++)
+			// single slide begins
+			div.top_slide(data-slide-num= i)
+				div.img
+					// slide background image 
+					img(src="images/slide_bg_1.jpg")
+				// text in slide begins	
+				div.slide_info.wrapper
+					h1.big_h Lorem ipsum dolor
+					p.title Aenean id ligula aliquam dolor tristique fringilla
+					a.button Start now
+				// text in slide ends
+			// single slide ends
+	div.prev_arrow 
+		span.fa.fa-chevron-left
+	div.next_arrow
+		span.fa.fa-chevron-right
+		
+// top slider ends
+
+// article begins
+
+article.main_article#about_company
+	div.wrapper
+		p.title_above Donec tristique rutrum
+		h2.mid_h About company
+		p.text!= article_text_1
+		// hidden text
+		p.text.more= article_text_2
+		a.button Read more
+
+// article ends
+
+// services begins
+
+section.services#services
+	div.wrapper
+		p.title_above Lorem ipsum
+		h2.mid_h Our services
+		div.services_grid.clear
+			-for(var i =0; i < 6; i++)
+				// single service begins
+				div.single_service
+					div.service_icon
+						div.single_service_borders_l
+						div.single_service_borders_r
+						span(class="fa " + service_icon_class[i])
+					div.single_service_info
+						h4.small_h Some Service
+						p.text= service_text
+				// single service ends
+						
+					
+
+// services ends
+
+// subscription begins
+
+section.subscribe
+	div.wrapper.clear
+		div.info
+			h3.subscribe_h Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+			p.text Cras ac tortor hendrerit, tristique elit sed, placerat justo.
+		a(href="").button Subscribe now
+
+// subscription ends
+
+// portfolio begins
+
+section.portfolio#portfolio
+	div.wrapper
+		p.title_above Morbi rhoncus
+		h2.mid_h Our works
+		div.container-fluid
+			div.row
+				-for(var i =1; i < 7; i++)
+					// single work begins
+					div.single_work.col-sm-4.col-xs-12.clear
+						img(src="images/grid_pict_" + i + ".jpg")
+						div.single_work_hover
+							div.shim
+								// link to current work own page
+								a.link.ellipse(href="")
+									span.fa.fa-external-link
+							div.title_block
+								// single work title
+								h5.product_name Ut pretium leo vel
+								// single work category
+								a.category Category
+					// single work ends	
+				
+// portfolio ends
+
+// contact begins
+
+section.contacts#contacts
+	div.wrapper.clear
+		div.contact_title_block
+			p.title_above tristique
+			h2.mid_h Contact
+		div.contacts_items.clear
+			// adress
+			div.contact_col
+				div.ellipse
+					span.fa.fa-map-marker
+				p.text.adress 2619 Old Fort Rd <br> Fort Washington, PA 19034
+			// tel	
+			div.contact_col
+				div.ellipse
+					span.fa.fa-phone
+				a(href="tel:+16105160418").tel.text 610-516-0418
+			// email
+			div.contact_col
+				div.ellipse
+					span.fa.fa-at
+				a(href="mailto:layout.02@gmail.com").email.text layout.02@gmail.com
+				
+// contact ends
+
+// map begins
+
+div.map
+	div(id="google_map")
+
+// map ends

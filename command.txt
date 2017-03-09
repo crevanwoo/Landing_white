@@ -1,0 +1,8 @@
+cd /d H:\1_Projects\Riff Point
+cd /d C:\OpenServer\domains\RiffPoint
+
+gulp compile:pug
+
+gulp all:watch
+
+
