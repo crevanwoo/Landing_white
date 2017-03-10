@@ -1,5 +1,5 @@
 cd /d H:\1_Projects\Riff Point
-cd /d C:\OpenServer\domains\RiffPoint
+cd /d C:\OpenServer\domains\riff
 
 gulp compile:pug
 

@@ -7,7 +7,7 @@ div.top_wrapper#top
 			div.top_slide(data-slide-num= i)
 				div.img
 					// slide background image 
-					img(src="images/slide_bg_1.jpg")
+					img(src="images/slide_bg_1.jpg" alt="slide_bg")
 				// text in slide begins	
 				div.slide_info.wrapper
 					h1.big_h Lorem ipsum dolor
@@ -80,7 +80,7 @@ section.portfolio#portfolio
 				-for(var i =1; i < 7; i++)
 					// single work begins
 					div.single_work.col-sm-4.col-xs-12.clear
-						img(src="images/grid_pict_" + i + ".jpg")
+						img(src="images/grid_pict_" + i + ".jpg" alt="portfolio_pict")
 						div.single_work_hover
 							div.shim
 								// link to current work own page
